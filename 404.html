@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page not found · TimeToAlign!</title>
+  <script>
+    // Short links such as https://timetoalign.github.io/concepts.html name a page of the
+    // TimeToAlign! documentation; forward them there. Paths of other projects are left alone.
+    (function () {
+      var path = window.location.pathname;
+      var own = /^\/(TimeToAlign|TimeToShare|TimeLineEditor|timetoshare)(\/|$)/i;
+      if (path !== "/" && !own.test(path)) {
+        window.location.replace("/TimeToAlign/page/_site" + path + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>This page does not exist. The TimeToAlign! documentation is at
+    <a href="/TimeToAlign/">https://timetoalign.github.io/TimeToAlign/</a>.</p>
+</body>
+</html>
