@@ -10,7 +10,7 @@
       var path = window.location.pathname;
       var own = /^\/(TimeToAlign|TimeToShare|TimeLineEditor|timetoshare)(\/|$)/i;
       if (path !== "/" && !own.test(path)) {
-        window.location.replace("/TimeToAlign/page/_site" + path + window.location.search + window.location.hash);
+        window.location.replace("/TimeToAlign/stable" + path + window.location.search + window.location.hash);
       }
     })();
   </script>
